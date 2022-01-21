@@ -1,0 +1,146 @@
+html{
+
+      --bg-header: #d2f5f4; 
+      --bg-body:#ffffff; 
+      --bg-footer:#d2f5f4; 
+      --text-header: #2f3f4c; 
+      --text-body:#000000;
+      --color-divider:#2e3f4c;
+      --bg-input:#dae1e4;
+      --button:#E6ECEF;
+      --button-hover: #708696;
+      --bg-conteudo: #9AB1C1;
+      transition: 0.6s;
+
+}
+
+body{
+      margin: 0;
+      padding: 0;
+      font-size: 1.25rem ;
+      background-color:var(--bg-body);
+      color: var(--text-body);
+      transition: 0.6s;
+
+}
+/* =========== Cabeçalho ========== */  
+
+.cabecalho{
+      display: flex;
+      justify-content: space-around ;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      background-color:var(--bg-header);
+      border-bottom: 3px solid var(--color-divider) ;
+      color: var(--text-header);
+}
+.logo{
+      font-size: 3.25rem;
+      font-weight: 700;
+}
+
+/* ========== Formulário Principal ========== */
+.formulario{
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+}
+.trabalhos{
+      background-color: var(--bg-input);
+
+}
+.btnAdicinar{
+      background-color: var(--button);
+}
+.btnAdicinar:hover{
+      background-color: var(--button-hover);
+}
+
+      
+/* ========== Conteúdo Principal ==========  */
+
+.conteudo{
+      display: flex;
+      font-size: 1.25rem;
+      padding: 1rem;
+      flex-direction: column;
+      width: 45.62rem;
+      height: 340px;
+      overflow-y:auto ;
+      margin: 0 auto;
+      background-color: var(--bg-conteudo);
+
+}
+.lista{
+      display: flex;
+      flex-direction: row;
+      
+      padding: 0.31rem 0.62rem 0.31rem 0.62rem;
+
+      border : 1px solid #000;
+      border-radius: 0.62rem;
+      margin-top: 5px;
+
+}
+.lista:first-child{
+      margin-top: 0;
+}
+
+
+
+
+
+
+/* ========== Rodapé Principal ==========  */
+
+.rodape{
+      background-color:var(--bg-footer);
+      display: flex;
+      gap: 30px;
+      justify-content:center;
+      margin-top: 50px;
+      border-top: 3px solid var(--color-divider) ;
+      }
+.contadores{
+      cursor: pointer;
+
+}
+
+/* ========== ícones ==========  */
+.lista > .icon-status:checked + div {
+      text-decoration: line-through red  ;
+      
+}
+.icon-moon{
+      transition: 1s;
+      cursor: pointer;
+      
+}
+icon-sun{
+      transition: 1s;
+      cursor: pointer;
+      
+}
+.icon-trash{
+      display: flex;
+      position: sticky;
+      left: 760px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      
+      
+}
+.icon-trash:hover{
+      color: #fa0101;
+      transform: scale(1.6);
+}
+
+.icon-status{
+      position: sticky;
+      left: 590px;
+      order: 2;
+      cursor: pointer;
+      
+}
